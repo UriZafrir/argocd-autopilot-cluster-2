@@ -1,7 +1,7 @@
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  generateName: crossplane-bucket
+  generateName: crossplane-bucket-
 spec:
   forProvider:
     region: il-central-1
