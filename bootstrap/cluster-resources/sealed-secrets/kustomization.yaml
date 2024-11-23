@@ -13,5 +13,5 @@ helmCharts:
   releaseName: sealed-secrets
   includeCRDs: true
 
-resources:
-- sealed-secrets-ns.yaml
+# resources:
+# - sealed-secrets-ns.yaml
