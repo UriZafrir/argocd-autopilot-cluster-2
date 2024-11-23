@@ -9,7 +9,7 @@ helmCharts:
   version: 2.16.2
   repo: https://bitnami-labs.github.io/sealed-secrets
   #valuesFile: values.yaml
-  namespace: sealed-secrets
+  namespace: kube-system
   releaseName: sealed-secrets
   includeCRDs: true
 
