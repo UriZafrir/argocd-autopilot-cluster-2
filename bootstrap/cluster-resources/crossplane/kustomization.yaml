@@ -16,5 +16,5 @@ helmCharts:
 resources:
 - crossplane-ns.yaml
 - sealed-secret.yaml
-- prover-aws-s3.yaml
+- provider-aws-s3.yaml
 - provider-config.yaml
