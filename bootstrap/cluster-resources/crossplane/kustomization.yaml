@@ -1,0 +1,17 @@
+#if k3s has traefik it wont work, need to
+#kubectl delete -f /var/lib/rancher/k3s/server/manifests/traefik.yaml
+# rm -rf /var/lib/rancher/k3s/server/manifests/traefik.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+- name: crossplane
+  version: 1.19.0-rc.0.79.gea5d79669
+  repo: https://charts.crossplane.io/master/
+  #valuesFile: values.yaml
+  namespace: crossplane-system
+  releaseName: sealed-secrets
+  includeCRDs: true
+
+resources:
+- crossplane-ns.yaml
