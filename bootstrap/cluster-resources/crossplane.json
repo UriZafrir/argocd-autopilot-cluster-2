@@ -1,1 +1,1 @@
-{"name":"sealed-secrets","server":"https://kubernetes.default.svc"}
+{"name":"crossplane","server":"https://kubernetes.default.svc"}
