@@ -19,4 +19,4 @@ resources:
 - sealed-secret.yaml
 - provider-aws-s3.yaml
 - provider-config.yaml
-- aws-resources/
+- aws-resources/bucket.yaml
