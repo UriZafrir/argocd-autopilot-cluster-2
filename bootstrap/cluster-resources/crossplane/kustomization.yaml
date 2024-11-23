@@ -14,4 +14,8 @@ helmCharts:
   includeCRDs: true
 
 resources:
-- ./*.yaml
+- crossplane-ns.yaml
+- sealed-secret.yaml
+- provider-aws-s3.yaml
+- provider-config.yaml
+- bucket.yaml
