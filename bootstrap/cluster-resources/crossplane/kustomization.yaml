@@ -16,4 +16,4 @@ helmCharts:
 resources:
 - crossplane-ns.yaml
 - sealed-secret.yaml
-- provider-config.yaml
+#- provider-config.yaml
