@@ -10,7 +10,7 @@ helmCharts:
   repo: https://charts.crossplane.io/master/
   #valuesFile: values.yaml
   namespace: crossplane-system
-  releaseName: sealed-secrets
+  releaseName: crossplane-stable
   includeCRDs: true
 
 resources:
