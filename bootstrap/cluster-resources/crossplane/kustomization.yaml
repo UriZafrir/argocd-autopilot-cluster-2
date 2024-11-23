@@ -1,6 +1,10 @@
 #if k3s has traefik it wont work, need to
 #kubectl delete -f /var/lib/rancher/k3s/server/manifests/traefik.yaml
 # rm -rf /var/lib/rancher/k3s/server/manifests/traefik.yaml
+
+#for generateName in argocd:
+#https://github.com/argoproj/argo-cd/issues/1639#issuecomment-494999921
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -19,4 +23,12 @@ resources:
 - sealed-secret.yaml
 - provider-aws-s3.yaml
 - provider-config.yaml
-- ./aws-resources/bucket.yaml
+- aws-resources/bucket.yaml
+
+patchesJson6902:
+- path: patches/bucket-generate-name.yaml
+  target:
+    group: s3.aws.upbound.io
+    version: v1beta1
+    kind: Bucket
+    name: crossplane-bucket
