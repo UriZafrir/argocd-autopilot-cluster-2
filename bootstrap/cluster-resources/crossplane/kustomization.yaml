@@ -25,10 +25,10 @@ resources:
 - provider-config.yaml
 - aws-resources/bucket.yaml
 
-patchesJson6902:
-- path: patches/bucket-generate-name.yaml
-  target:
-    group: s3.aws.upbound.io
-    version: v1beta1
-    kind: Bucket
-    name: crossplane-bucket
+# patchesJson6902:
+# - path: patches/bucket-generate-name.yaml
+#   target:
+#     group: s3.aws.upbound.io
+#     version: v1beta1
+#     kind: Bucket
+#     name: crossplane-bucket
